@@ -20,41 +20,23 @@ recipes:
 - sprout-git::git_scripts
 
 # development (rails)
-- sprout-rbenv
-- sprout-ruby
-- sprout-mysql
-- sprout-postgresql
+#- sprout-rbenv
+#- sprout-ruby
+#- sprout-mysql
+#- sprout-postgresql
 
 # apps
-- sprout-osx-apps::iterm2
+#- sprout-osx-apps::iterm2
 - sprout-osx-apps::flycut
 - sprout-osx-apps::shiftit
 
 # apps (editors)
-- sprout-osx-apps::textmate_preferences
+#- sprout-osx-apps::textmate_preferences
 - sprout-osx-apps::macvim
-- sprout-jetbrains-editors::rubymine
+- sprout-jetbrains-editors::intellij
 
 node_attributes:
   sprout:
-    git:
-      domain: pivotallabs.com
-      authors:
-        - initials: ah
-          name: Abhijit Hiremagalur
-          username: abhi
-        - initials: bc
-          name: Brian Cunnie
-          username: cunnie
-        - initials: jrhb
-          name: Jonathan Barnes
-        - initials: lw
-          name: Luke Winikates
-          username: lwinikates
-      projects:
-        -
-          name: sprout-wrap
-          url: https://github.com/pivotal-sprout/sprout-wrap.git
     terminal:
       default_profile: 'Pro'
     settings:
@@ -82,16 +64,38 @@ node_attributes:
         - rbenv-binstubs
         - rbenv-gem-rehash
       casks:
+        - 1password
+        - atom
+        - bartender
+        - boot2docker
+        - calibre
+        - camtasia
         - ccmenu
+        - colloquy
+        - cleanmymac
+        - dash
+        - evernote
+        - filezilla
         - firefox
+        - flashlight
+        - flux
         - gitx-rowanj
         - github
         - google-chrome
         - google-drive
         - google-hangouts
+        - gpgtools
+        - hazel
+        - little-snitch
+        - seil
+        - sketch
         - skype
-        - textmate
+        - tagspaces
+        - textexpander
+        - tuxera-ntfs
         - vagrant
+        - vlc
         - virtualbox
+        - xmind
         - xquartz
         - xscope
